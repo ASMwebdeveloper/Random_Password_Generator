@@ -84,4 +84,8 @@ button > img{
 }
 /* *******************  Generate_Pass tag css end here *******************  */
 
+/* ******************* For mobile responsive *******************  */
 
+@media screen and (300px >= width >= 520px) {
+    
+}
