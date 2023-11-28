@@ -1,0 +1,87 @@
+@font-face{
+    font-family: Poppins;
+    src: url(../Fonts/Poppins-Regular.woff2);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+body{
+    background-color: #011F3C;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.main{
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+
+/* *******************  Title tag css start here *******************  */
+
+.title > h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.title > h1 > span{
+    color: #019f55;
+    border-bottom: 3.5px solid #0D885E;
+    padding-bottom: 7px;
+}
+
+/* *******************  Title tag css end here *******************  */
+
+/* *******************  Password_Box tag css start here *******************  */
+
+.pass_box{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+.pass_box input{
+    font-size: 20px;
+}
+input , button{
+    border: none;
+    outline: none;
+}
+.pass_box img{
+    width: 30px;
+    cursor: pointer;
+}
+
+/* *******************  Password_Box tag css end here *******************  */
+
+/* *******************  Generate_Pass tag css start here *******************  */
+
+button{
+    background-color: #0D885E;
+    color: #fff;
+    padding:16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 300;
+}
+button > img{
+    width: 26px;
+}
+/* *******************  Generate_Pass tag css end here *******************  */
+
+
