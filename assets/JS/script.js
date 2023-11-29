@@ -9,6 +9,7 @@ const symbol = "~!@#$%^&*()_+|}{?></-="
 const allChars = upperCase + lowerCase + number + symbol
 
 function createPass() {
+
     let password = ""
     password += upperCase[Math.floor(Math.random() * upperCase.length)]
     password += lowerCase[Math.floor(Math.random() * lowerCase.length)]
@@ -20,6 +21,7 @@ function createPass() {
     }
 
     passwordBox.value = password
+    document.getElementById('success_msg').classList.add('d-none')
 }
 
 function copyPass() {
@@ -27,8 +29,7 @@ function copyPass() {
     document.execCommand("copy");
     
     let successMsg = document.getElementById("success_msg")
-    successMsg.classList.remove("d-none")
+    successMsg.classList.toggle("d-none")
     
     passwordBox.value = ""
-
 }
